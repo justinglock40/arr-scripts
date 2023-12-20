@@ -18,6 +18,8 @@ echo "************ install python packages ************" && \
 pip install --upgrade --no-cache-dir -U \
 		excludarr \
 		yq && \
+echo "************ install pip dependencies ************" && \
+python3 -m pip install --upgrade pip && \
 echo "************ install recyclarr ************" && \
 mkdir -p /recyclarr && \
 wget "https://github.com/recyclarr/recyclarr/releases/latest/download/recyclarr-linux-musl-x64.tar.xz" -O "/recyclarr/recyclarr.tar.xz" && \
